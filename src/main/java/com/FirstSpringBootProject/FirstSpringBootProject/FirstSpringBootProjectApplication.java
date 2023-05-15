@@ -16,7 +16,13 @@ public class FirstSpringBootProjectApplication {
 
 	@GetMapping("/")
 	public String greet() {
-		return "Hello";
+		return "Hello world";
+	}
+
+	@GetMapping("/your_balance")
+	public double balance() {
+		double balance = 50000.00;
+		return balance;
 	}
 
 }
